@@ -1,10 +1,10 @@
-# ARM architecture meson build
+# mips architecture meson build
 
 mips_arch_dep = declare_dependency(
 	include_directories: include_directories('include'),
 	sources: files(
-		'src/__aeabi_atexit.c',
-		'src/crt0.S',
+		# 'src/__aeabi_atexit.c',
+		# 'src/crt0.S',
 	)
 )
 

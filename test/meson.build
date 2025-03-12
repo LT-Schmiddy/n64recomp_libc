@@ -139,8 +139,9 @@ stackprotect_test = executable('stackprotect_test',
 # This application is used to confirm linking behavior, primarily for cross builds
 
 if meson.is_cross_build() and meson.is_subproject() == false
-
-	host_objcopy = find_program(meson.get_external_property('objcopy'),
+	host_objcopy_prop = 'llvm-objcopy'
+	message(host_objcopy_prop)
+	host_objcopy = find_program(host_objcopy_prop,
 		required: false, disabler: true)
 
 	if host_objcopy.found() == false

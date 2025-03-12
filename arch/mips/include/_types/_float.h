@@ -1,5 +1,5 @@
-#ifndef ARM_FLOAT_H_
-#define ARM_FLOAT_H_
+#ifndef MIPS_FLOAT_H_
+#define MIPS_FLOAT_H_
 
 #define FLT_EVAL_METHOD 0
 
@@ -18,4 +18,4 @@
 
 #define DECIMAL_DIG 17
 
-#endif // ARM_FLOAT_H_
+#endif // MIPS_FLOAT_H_
